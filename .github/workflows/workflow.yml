@@ -26,7 +26,7 @@ jobs:
           pip install mkdocs
 
       - name: Generate site
-        run: mkdocs build
+        run: cp *.md docs/ && mkdocs build
 
       # Artifact for GitHub Pages
       - name: Upload Pages Artifact
