@@ -62,7 +62,7 @@ jobs:
           path: site
 
       - name: Publish to Cloudflare Pages
-        run: npx wrangler pages deploy site --project-name=autumn-night-a5f7 --branch=main --commit-dirty=true
+        run: npx wrangler pages deploy site --project-name=kvm-dump --branch=main --commit-dirty=true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
